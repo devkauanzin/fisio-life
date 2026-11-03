@@ -1,0 +1,57 @@
+/* Hero simplificado: sem foto e com a mensagem no centro. */
+.hero-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 600px;
+  padding: 70px 7.4% 58px;
+  text-align: center;
+}
+
+.hero-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 14px 25px 32px;
+}
+
+.hero-art,
+.hero-side-note {
+  display: none;
+}
+
+.hero h1 {
+  max-width: 760px;
+}
+
+.hero-intro {
+  max-width: 520px;
+  margin-inline: auto;
+}
+
+.hero-actions,
+.hero-note {
+  justify-content: center;
+}
+
+@media (max-width: 900px) {
+  .hero-panel {
+    min-height: 520px;
+    padding-inline: 6%;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero-panel {
+    min-height: 0;
+    padding: 42px 25px 54px;
+  }
+
+  .hero-copy {
+    padding: 0;
+  }
+
+  .hero-note {
+    margin-bottom: 0;
+  }
+}
